@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+   <h1>Formulario de información</h1> 
+   <form action="formulario.php" method="post">
+   <fieldset>
+    <legend>Sus datos</legend>
+    <p><label for="nombre">Nombre y Apellidos:</label>
+    <input autofocus id="nombre" type="text" maxlength="50"
+    name="nombre" ></p>
+    <label for="contrase">Contraseña</label>
+    <input type="password" maxlength="8"
+    name="contrase" id="contrase">
+    <p><label for="user">Usuario:</label>
+        <input id="user" type="text"
+        placeholder="anónimo" disabled>
+    </p>
+    <p>Nivel: </p>
+        <p><label for="pro">
+        <input type="radio" value="profesional" id="pro" name="nivel">Profesional</label></p>
+        <p><label for="ava">
+        <input type="radio" value="avanzado" id="ava" checked id="ava" name="nivel">Avanzado</label></p>
+        <p><label for="pri">
+        <input type="radio" value="principiante" id="pri" name="nivel">Principiante</label></p>
+    
+</fieldset>
+<p><label for="pais">Nacionalidad:</label>
+    <select id="pais" name="pais" required>
+        <option value="es" selected>España</option>
+        <option value="fr">Francia</option>
+        <option value="it">Italia</option>
+        <option value="de">Alemania</option>
+        <option value="uk">Reino Unido</option>
+        <option value="us">Estados Unidos</option>
+        <option value="mx">México</option>
+        <option value="ar">Argentina</option>
+        <option value="jp">Japón</option>
+        <option value="cn">China</option>
+    </select></p>
+    <p><label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" ></textarea>
+</p>
+    <p><label for="deseo">
+        <input type="checkbox" name="des" id="deseo" checked>
+        Deseo recibir información sobre novedades y ofertas
+    </label>
+</p>
+    <p><label for="declaro">
+        <input type="checkbox" name="dec" id="declaro">
+        Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+    </label></p>
+    <p><label for="foto">Adjuntar foto: </label>
+    <input type="file" name="foto" id="foto"></p>
+    <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar datos">
+</form>
+</body>
+</html>
